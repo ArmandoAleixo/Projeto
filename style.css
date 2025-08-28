@@ -130,4 +130,11 @@ footer {
   color: white;
   margin-top: 20px;
 }
+.slogan-equipe {
+  font-style: italic;
+  color: #000000;
+  margin-top: 5px;
+  font-size: 1em;
+  text-align: center;
+}
 
