@@ -1,0 +1,133 @@
+/* Estilo base */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #2a68af;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #357ab8;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 300px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #4a90e2;
+  margin-bottom: 0.5rem;
+}
+
+.curiosidade {
+  display: none;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+/* Boxes internas */
+.box, .extra-section {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: #f9f9ff;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.box h3, .extra-section h3 {
+    margin-bottom: 0.3rem;
+    color: #000000;
+}
+
+.dark-mode .box h3, 
+.dark-mode .extra-section h3 {
+  color: #ffffff;            /* Branco no modo dark */
+}
+
+/* Links */
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Modo escuro */
+.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode .box, 
+.dark-mode .extra-section {
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #66b2ff;
+}
+
+.dark-mode button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode button:hover {
+  background-color: #555555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #4a90e2;
+  color: white;
+  margin-top: 20px;
+}
+
