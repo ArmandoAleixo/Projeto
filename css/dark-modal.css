@@ -89,3 +89,8 @@ textarea {
 .dark-mode .nav-menu a {
     color: #fff;
 }
+.dark-mode .nav-menu a.active-section {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffeb3b; /* destaque visível */
+}
