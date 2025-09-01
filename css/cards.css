@@ -1,0 +1,144 @@
+/* =========================
+   Header e Menu / Hamburger
+   ========================= */
+header {
+    background: #4a90e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Botão Dark Mode */
+header button {
+    margin: 0.5rem 0.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #2a68af;
+    color: white;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background: #357ab8;
+}
+
+/* Menu de navegação */
+.nav-menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+.nav-menu a {
+    display: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-menu.active a {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger - Botão Seções */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    margin-top: 0.5rem;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Footer e slogan */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #4a90e2;
+    color: white;
+    margin-top: 20px;
+}
+
+.slogan-equipe {
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Botão voltar ao topo */
+#voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #2a68af;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 9999;
+}
+
+#voltar-topo:hover {
+    background: #357ab8;
+}
+
+/* =========================
+   Responsividade
+   ========================= */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        background: #4a90e2;
+        padding: 1rem;
+        border-radius: 8px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+    }
+}

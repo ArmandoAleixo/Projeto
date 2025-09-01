@@ -1,0 +1,74 @@
+/* =========================
+   Base do Site
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Cards de perfis, projetos etc. */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Fotos de perfil */
+.foto-perfil {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4a90e2;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+
+/* Boxes extras: skills, projetos, contatos rápidos */
+.extra-section {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #f9f9ff;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.extra-section h3 {
+    margin-bottom: 0.3rem;
+    color: #000;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-menu a.active-section {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffeb3b; /* destaque visível */
+}

@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosso Site Pessoal (JavaLeague)</title>
-  <link rel="stylesheet" href="style.css">
+  <title>JavaLeague - Equipe de Tecnologia e Inovação</title>
+
+
+  <!-- SEO -->
+  <meta name="description"
+    content="JavaLeague: equipe de tecnologia da Unifacisa. Conheça nossos projetos, skills e entre em contato!">
+  <meta name="keywords" content="JavaLeague, tecnologia, sistemas de informação, programação, projetos, portfólio">
+  <link rel="icon" href="assets/ícones/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/dark-modal.css">
 </head>
+
 <body>
-<header>
+  <header>
   <div class="header-container">
     <h1>JavaLeague</h1>
     <p class="slogan-equipe">Unindo tecnologia, Estilo, Dedicação e criatividade!</p>
 
     <!-- Botão Dark Mode -->
-    <button id="toggle-dark">Alternar visualização</button>
+    <button id="toggle-dark" aria-label="Alternar entre modo claro e escuro">Alternar Visualização</button>
 
-    <!-- Menu Hambúrguer -->
-    <div class="hamburger" id="hamburger">
+    <!-- Botão Seções (Hambúrguer) -->
+    <div class="hamburger" id="hamburger" role="button" aria-label="Seções" aria-expanded="false" tabindex="0">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
     <!-- Menu de navegação -->
-    <nav class="nav-menu" id="nav-menu">
+    <nav class="nav-menu" id="nav-menu" aria-label="Menu Seções">
       <a href="#perfil1">Marcos Marinho</a>
       <a href="#perfil2">Armando Aleixo</a>
-      <a href="#form-contato">Fale com a JavaLeague!</a>
+      <a href="#contato">Fale com a JavaLeague!</a>
     </nav>
   </div>
 </header>
@@ -36,15 +48,18 @@
   <main>
     <!-- PERFIL 1 -->
     <section class="card" id="perfil1">
-      <img src="imagens/FotoM.png" alt="Foto Marcos" class="foto-perfil">
+      <img src="assets/imagens/FotoM.png" alt="Foto de Marcos Marinho" class="foto-perfil" loading="lazy">
       <h2>Marcos Marinho</h2>
       <p><strong>Carreira:</strong> Estudante de Sistemas de Informação - Unifacisa</p>
-      <button class="toggle-btn">Mostrar Curiosidade</button>
-      <p class="curiosidade">Sou apaixonado por tecnologia e IA, sempre buscando inovação.</p>
+      <button class="toggle-btn" aria-expanded="false">Mostrar Curiosidade</button>
+      <p class="curiosidade" aria-label="Curiosidade de Marcos Marinho" hidden>
+        Sou apaixonado por tecnologia e IA, sempre buscando inovação.
+      </p>
 
       <div class="extra-section">
         <h3>Projetos</h3>
-        <a href="https://www.figma.com/proto/1dR3yYC3phGGoO8u3dSlj6/Untitled?node-id=0-1&t=laOtgzis5X0z569t-1" target="_blank">Veja meus projetos</a>
+        <a href="https://www.figma.com/proto/1dR3yYC3phGGoO8u3dSlj6/Untitled?node-id=0-1&t=laOtgzis5X0z569t-1"
+          target="_blank">Veja meus projetos</a>
       </div>
 
       <div class="extra-section">
@@ -55,9 +70,9 @@
       <div class="extra-section">
         <h3>Contato Rápido</h3>
         <p>
-          <a href="mailto:marcosmarinho.segundo@gmail.com">E-mail</a> | 
-          <a href="https://wa.me/55983999945817" target="_blank">WhatsApp</a> | 
-          <a href="https://www.linkedin.com/in/marcos-segundo-7ab55a358" target="_blank">LinkedIn</a> | 
+          <a href="mailto:marcosmarinho.segundo@gmail.com">E-mail</a> |
+          <a href="https://wa.me/55983999945817" target="_blank">WhatsApp</a> |
+          <a href="https://www.linkedin.com/in/marcos-segundo-7ab55a358" target="_blank">LinkedIn</a> |
           <a href="https://github.com/Mmarinho0" target="_blank">GitHub</a>
         </p>
       </div>
@@ -65,11 +80,14 @@
 
     <!-- PERFIL 2 -->
     <section class="card" id="perfil2">
-      <img src="imagens/FotoA.jpeg" alt="Foto Armando" class="foto-perfil">
+      <img src="assets/imagens/FotoA.jpeg" alt="Foto de Armando Aleixo" class="foto-perfil" loading="lazy">
       <h2>Armando Aleixo</h2>
       <p><strong>Carreira:</strong> Graduando em Sistema de Informação na Unifacisa</p>
-      <button class="toggle-btn">Mostrar Curiosidade</button>
-      <p class="curiosidade">Futuro programador, amante de jogos eletrônicos, mundo geek e música.</p>
+      <button class="toggle-btn" aria-expanded="false">Mostrar Curiosidade</button>
+      <p class="curiosidade" aria-label="Curiosidade de Armando Aleixo" hidden>
+        Futuro programador, amante de jogos eletrônicos, mundo geek e música.
+      </p>
+
 
       <div class="extra-section">
         <h3>Projetos</h3>
@@ -84,73 +102,41 @@
       <div class="extra-section">
         <h3>Contato Rápido</h3>
         <p>
-          <a href="mailto:armando.aleixo9@gmail.com">E-mail</a> | 
-          <a href="https://wa.me/5583986738642" target="_blank">WhatsApp</a> | 
+          <a href="mailto:armando.aleixo9@gmail.com">E-mail</a> |
+          <a href="https://wa.me/5583986738642" target="_blank">WhatsApp</a> |
           <a href="https://github.com/ArmandoAleixo" target="_blank">GitHub</a>
         </p>
       </div>
     </section>
 
-<!-- Seção de Contato -->
-<section class="card" id="contato">
-  <h2>Fale com a JavaLeague!</h2>
+    <!-- Seção de Contato -->
+    <section class="card" id="contato">
+      <h2>Fale com a JavaLeague!</h2>
 
-  <form id="form-contato">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="email" name="email" placeholder="Seu email" required>
-    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
+      <form id="form-contato" action="#" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" aria-label="Nome" required>
+        <input type="email" name="email" placeholder="Seu email" aria-label="Email" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" aria-label="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
 
-  <p id="form-status"></p>
-</section>
-
-
-<p id="form-status"></p>
-
-
-<p id="form-status"></p>
-
-<script>
-  const form = document.getElementById("form-contato");
-  const status = document.getElementById("form-status");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // impede redirecionamento
-
-    const data = new FormData(form);
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        status.textContent = "✅ Mensagem enviada com sucesso!";
-        form.reset(); // limpa os campos
-      } else {
-        status.textContent = "⚠️ Ocorreu um erro. Tente novamente.";
-      }
-    } catch (error) {
-      status.textContent = "❌ Não foi possível enviar. Verifique sua conexão.";
-    }
-  });
-</script>
-
-
-</section>
-
+      <p id="form-status"></p>
+    </section>
 
     <!-- VOLTAR AO TOPO -->
-    <button id="voltar-topo">↑ Topo</button>
-
+    <button id="voltar-topo" aria-label="Voltar ao topo da página">↑ Topo</button>
   </main>
+
+
 
   <footer>
     <p>JavaLeague &copy; 2025</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/interatividade.js"></script>
+  <script src="js/scroll-form.js"></script>
+  <script src="js/menu.js"></script>
+
 </body>
+
 </html>

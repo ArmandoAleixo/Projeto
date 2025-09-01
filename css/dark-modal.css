@@ -1,0 +1,91 @@
+/* =========================
+   Formulário de Contato
+   ========================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#form-contato button {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+#form-status {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+#form-status.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+#form-status.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+/* =========================
+   Dark Mode
+   ========================= */
+.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+.dark-mode .card {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.dark-mode .extra-section {
+    background: #2a2a2a;
+    color: #fff;
+}
+
+.dark-mode .extra-section h3 {
+    color: #fff;
+}
+
+.dark-mode a {
+    color: #66b2ff;
+}
+
+.dark-mode button {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode button:hover {
+    background: #555;
+}
+
+.dark-mode .nav-menu {
+    background:  #66b2ff;
+}
+
+.dark-mode .nav-menu a {
+    color: #fff;
+}
